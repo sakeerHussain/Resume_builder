@@ -1,5 +1,7 @@
 import React from "react";
 import "../pages/LandingPage.css";
+import { Link } from "react-router-dom";
+import ResumeGenerator from "./ResumeGenerator";
 
 const LandingPage = () => {
   return (
@@ -11,7 +13,10 @@ const LandingPage = () => {
           <div className="content">
             <h3>Design to get hired!</h3>
             <h5>our skills, your story, your next job — all in one.</h5>
-            <button>Make your Resume</button>
+            <Link to={'/resumeGenerator'}>
+             <button>Make your Resume</button>
+            </Link>
+           
           </div>
         </section>
 
